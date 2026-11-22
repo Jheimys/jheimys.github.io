@@ -6,15 +6,14 @@ Endereço depois de publicado: **https://jheimys.github.io**
 |---|---|
 | Início | https://jheimys.github.io |
 | Política de privacidade (todos os apps) | https://jheimys.github.io/privacidade.html |
+| app-ads.txt (AdMob) | https://jheimys.github.io/app-ads.txt |
 
 ## Lançou um app novo?
 Abra `privacidade.html`, acrescente o nome do app na lista "Apps cobertos" e atualize a data no topo. O link continua o mesmo.
 
-## app-ads.txt (fazer depois)
-Quando o AdMob pedir o app-ads.txt:
-1. No AdMob, abra **Apps > Ver todos os apps > app-ads.txt** e copie a linha que ele mostra
-   (algo como `google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0`).
-2. Aqui no repositório, crie um arquivo chamado `app-ads.txt` (na raiz, ao lado do index.html)
-   e cole essa linha.
-3. Na Play Console, em *Ficha da loja > Detalhes de contato*, coloque o site
-   `https://jheimys.github.io`. É por esse endereço que o AdMob encontra o arquivo.
+## app-ads.txt
+O arquivo `app-ads.txt` (na raiz) autoriza o AdMob a vender anúncios dos apps da Jheimys Games.
+Vale para todos os apps da conta (Ollie Rush, Fraseando…): não precisa mudar ao lançar um app novo.
+
+Para o AdMob encontrar o arquivo, cada app precisa ter o site `https://jheimys.github.io`
+na Play Console, em *Ficha da loja > Detalhes de contato > Site*.
